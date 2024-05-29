@@ -1,0 +1,105 @@
+simulation server web  
+
+un graphes est un ensemble de noeud relié par des arrets
+
+contexte un noeud est représenté par un server
+un server a les propriéte suivante un serveur a (un adresse IP unique,et liste url de site ebergé) 
+un server est lier par un arret a un autre server le poid est represente par ms le ping 
+une url de site peut etre associer a plusieur server 
+
+
+
+objectif : 
+-simulation server web
+-algorithme de dijks7
+
+
+fonctionalité
+1.ajouter server sur l'ecran
+  -cliquer sur l'ecran pour ajouter un server,affiche un formulaire d'ajout de server(ip)
+2.ajouter arret entre deux server et ajouter poid sur l'arret
+  -cliquer sur un server pour ajouter un arret,affiche un formulaire d'ajout d'arret(ip,poid)
+3.ajouter url de site dans un server 
+  -cliquer sur un server pour ajouter une site a l'interieur,affiche un formulaire d'ajoute de site
+4.afficher les server 
+5.afficher les arrets
+6.afficher les url de site
+7.rechercher et afficher le chemin le plus court entre un server et un url de site en utilisant algorithme de Dijkstra
+ -cliquer sur server pour faire recherche
+8.les serveur sur la fenetre sont draggable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Interface graphique avec PyQt :
+Utilisez PyQt pour créer une interface graphique interactive où chaque serveur est représenté par un nœud.
+Permettez à l'utilisateur de cliquer sur un serveur pour effectuer une recherche d'URL.
+Recherche d'une URL sur un serveur :
+Lorsqu'un serveur est sélectionné, affichez une barre de recherche permettant à l'utilisateur d'entrer une URL.
+Associez à chaque serveur une liste d'URLs qu'il héberge.
+Si l'URL recherchée est présente sur le serveur sélectionné, retournez directement le chemin le plus court.
+Sinon, passez à l'étape suivante.
+Utilisation de l'algorithme de Dijkstra :
+Utilisez l'algorithme de Dijkstra pour trouver le chemin le plus court vers un serveur contenant l'URL recherchée.
+Modélisez le réseau de serveurs et les connexions entre eux en utilisant la structure de graphe fournie par NetworkX.
+Calculez le chemin le plus court en fonction des poids des connexions (le ping entre les serveurs).
+Retournez le chemin le plus court trouvé.

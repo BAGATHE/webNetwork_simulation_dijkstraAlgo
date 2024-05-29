@@ -1,0 +1,29 @@
+-technologie
+     -NetworkX
+     -tkinter
+
+
+
+
+
+
+
+
+
+
+
+
+
+classe Server:
+        ip
+        ping =  float('inf')
+        predecesseur = None
+        voisins = []
+        point
+        listSiteHebergé = []
+classe Site:
+        -identifiant
+        -url
+        -listServer
+       
+frame 
